@@ -2,12 +2,19 @@ html {
     height: 100%;
 }
 
+button {
+    margin: 10px;
+    background-color: orange;
+    color: white;
+    font-size: medium;
+    font-weight: 900;
+}
+
 body {
     font-family: 'Radio Canada', sans-serif;
     min-height: 100%;
     margin: 0;
     display: grid;
-    text-align: center;
 }
 
 .grid * {
@@ -30,7 +37,7 @@ header * {
 header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 2fr repeat(4, 100px);
+    grid-template-columns: 1fr repeat(4, 150px);
     background-color: rgb(255, 253, 244);
 }
 
@@ -38,10 +45,35 @@ main * {
     text-align: center;
 }
 
+main * button {
+    width: 20%;
+}
+
 main {
     display: grid;
     grid-area: main;
     background-color: rgb(255, 247, 233);
+}
+
+.kartochki {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    margin: 3em;
+    grid-column-gap: 3em;
+    padding: 30px;
+}
+
+
+/*  */
+
+.kartochka {
+    border: 1px solid black;
+    padding: 1em;
+    min-height: 50px;
+}
+
+.kartochka * img {
+    margin: 0.5em;
 }
 
 .onegroop {
