@@ -92,8 +92,16 @@ main {
 }
 
 .treagroop {
-    display: grid;
+    /* display: grid; */
     border: 1px solid black;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.treagroop>div:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
 
 .foogroop {
